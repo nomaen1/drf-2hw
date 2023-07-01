@@ -17,7 +17,7 @@ class UserDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = User 
         fields = ('id',  'username', 'email', 
-                  'phone_number', 'age', 'balance', 
+                  'phone_number', 'age', 'balance',   
                   'wallet_address','created_at','from_user'
                   )
 

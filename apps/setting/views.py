@@ -21,7 +21,7 @@ class CreateTransferView(CreateAPIView):
             from_user.balance = float(from_user.balance) - float(amount)
             to_user.balance = float(to_user.balance) + float(amount)
             from_user.save()
-            to_user.save()
+            to_user.save() 
             transfer = HistoryTransfer.objects.create(from_user=from_user, to_user=to_user, amount=amount)
             serializer = HistoryTransferSerializer(transfer)
             return Response(serializer.data, status=status.HTTP_201_CREATED)

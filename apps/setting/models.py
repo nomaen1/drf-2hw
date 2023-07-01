@@ -35,4 +35,4 @@ class HistoryTransfer(models.Model):
     
     class Meta:
         verbose_name = "История"
-        verbose_name_plural = "История"
+        verbose_name_plural = "История" 

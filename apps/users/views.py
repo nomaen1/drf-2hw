@@ -25,4 +25,4 @@ class UserAPIViewSet(GenericViewSet,
         if self.action in ('retrieve', ):
             return UserDetailSerializer
         return UserSerializer
-    
+      

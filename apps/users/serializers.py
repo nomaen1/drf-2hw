@@ -21,7 +21,7 @@ class UserDetailSerializer(serializers.ModelSerializer):
                   'wallet_address','created_at','from_user'
                   )
 
-class RegisterSerializer(serializers.ModelSerializer):
+class RegisterSerializer(serializers.ModelSerializer): 
     password = serializers.CharField(
         max_length=255, write_only=True
     )

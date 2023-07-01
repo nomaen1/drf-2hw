@@ -43,4 +43,4 @@ class User(AbstractUser):
         if not self.wallet_address:
             self.wallet_address = secrets.token_hex(6)
         super().save(*args, **kwargs)
-         
+           

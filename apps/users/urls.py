@@ -16,5 +16,5 @@ urlpatterns = [
     path('refresh/', TokenRefreshView.as_view(), name = "api_refresh"),
     
 ]
-
+  
 urlpatterns += router.urls
